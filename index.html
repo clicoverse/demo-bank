@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- import: tailwind css -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- tailwind intel -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <title>Demo Bank</title>
+</head>
+<body>
+  <header>
+    <h1 class="text-5xl text-center mt-6">Welcome to <span class="font-semibold text-violet-600">Demo Bank!!</span></h1>
+  </header>
+  <main>
+    <section>
+      <div class="bg-blue-200 w-9/12 mx-auto p-8 mt-12 rounded-md">
+        <h3 class="text-3xl text-center font-semibold mb-4">Please Login</h3>
+        <input class="w-9/12 block p-2 mb-2 rounded-md mx-auto" type="email" name="email" id="user-email" placeholder="Enter your email address">
+        <input class="w-9/12 block p-2 mb-2 rounded-md mx-auto" type="password" name="password" id="user-pass" placeholder="Enter your password">
+        <div class="mx-auto">
+          <button id="btn-submit" class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 rounded-md px-4 py-2 text-white">Submit</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./login.js"></script>
+</body>
+</html>
